@@ -1,0 +1,15 @@
+server:
+  address: 127.0.0.1:8080
+  read_timeout: 10s
+  write_timeout: 10s
+  idle_timeout: 60s
+  shutdown_timeout: 10s
+
+log:
+  level: info
+  console: false
+  filename: logs/app.log
+  max_size: 500 # MB
+  max_backups: 7 # 0 表示不按文件数量删除
+  max_age: 30 # 天；0 表示不按时间删除
+  compress: true
